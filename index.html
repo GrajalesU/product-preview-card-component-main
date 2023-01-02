@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="card">
+      <picture>
+        <source
+          srcset="./images/image-product-mobile.jpg"
+          media="(max-width: 1439px)"
+        />
+        <source
+          srcset="./images/image-product-desktop.jpg"
+          media="(min-width: 1440px)"
+        />
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="Gabriel Chanel Perfume"
+        />
+      </picture>
+      <div class="product">
+        <small class="product-type">Perfume</small>
+        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <ul class="pricing">
+          <li class="pricing-discount">$149.99</li>
+          <li class="pricing-original">$169.99</li>
+        </ul>
+        <button class="add-to-cart">
+          <img src="./images/icon-cart.svg" alt="shopping cart" />
+          <span>Add to Cart</span>
+        </button>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+:root {
+  --green: hsl(108, 36%, 37%);
+  --dark-green: hsl(108, 36%, 25%);
+  --gray: hsl(228, 12%, 48%);
+  --black: hsl(212, 21%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --cream: hsl(30, 38%, 92%);
+  --mobile-size: 375px;
+  --desktop-size: 1440px;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  min-height: 100vh;
+}
+
+.card {
+  background: var(--white);
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product {
+  width: 87%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.product-type {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 0.7rem;
+}
+
+.product-name {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.product-description {
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+.pricing {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.pricing-discount {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.pricing-original {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  width: 100%;
+  background: var(--green);
+  font-weight: 700;
+  color: var(--white);
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-to-cart:hover {
+  background: var(--dark-green);
+  cursor: pointer;
+}
+
+.add-to-cart img {
+  width: 20px;
+  border-radius: 0;
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    max-width: 700px;
+  }
+
+  .card img {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 350px;
+    margin: 0;
+    margin-top: 30px;
+    padding-inline: 40px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .product-name {
+    padding-right: 30px;
+  }
+
+  .product-description {
+    padding-right: 30px;
+    letter-spacing: 1.5;
+    line-height: 2;
+  }
+}
