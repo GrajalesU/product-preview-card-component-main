@@ -31,6 +31,7 @@ body {
   max-width: 400px;
   margin: 30px auto;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -122,6 +123,7 @@ body {
 
   .card img {
     border-radius: 0;
+    height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
